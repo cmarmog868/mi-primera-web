@@ -1,0 +1,592 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+html, body {
+
+    width: 100%;
+
+    overflow-x: hidden;
+
+}
+
+
+
+body {
+
+    background-color: black;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+
+}
+
+
+
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+}
+
+
+
+
+nav h1 {
+
+    color: gold;
+
+}
+
+
+
+
+ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+
+}
+
+
+
+
+a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+
+
+.hero {
+
+
+    min-height: 80vh;
+
+
+    width: 100%;
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    justify-content: center;
+
+
+    align-items: center;
+
+
+    text-align: center;
+
+
+    padding: 20px;
+
+
+
+    background-image: linear-gradient(
+
+        rgba(0,0,0,0.6),
+
+        rgba(0,0,0,0.6)
+
+    ),
+
+    url("img/fondo.jpg.webp");
+
+
+
+    background-size: cover;
+
+
+    background-position: center;
+
+
+}
+
+
+
+
+.hero h2 {
+
+
+    font-size: 45px;
+
+
+    animation: aparecer 1s ease;
+
+
+}
+
+
+
+
+.hero p {
+
+
+    font-size: 20px;
+
+
+    animation: aparecer 1.5s ease;
+
+
+}
+
+
+
+
+
+button {
+
+
+    background-color: gold;
+
+
+    color: black;
+
+
+    padding: 15px 30px;
+
+
+    border: none;
+
+
+    border-radius: 10px;
+
+
+    font-size: 18px;
+
+
+    cursor: pointer;
+
+
+    animation: aparecer 2s ease;
+
+
+}
+
+
+
+
+
+button:hover {
+
+
+    transform: scale(1.05);
+
+
+}
+
+
+
+
+
+@keyframes aparecer {
+
+
+    from {
+
+
+        opacity: 0;
+
+
+        transform: translateY(30px);
+
+
+    }
+
+
+
+    to {
+
+
+        opacity: 1;
+
+
+        transform: translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+    nav {
+
+
+        flex-direction: column;
+
+
+        padding: 20px;
+
+
+    }
+
+
+
+
+    nav h1 {
+
+
+        font-size: 28px;
+
+
+    }
+
+
+
+
+    ul {
+
+
+        flex-direction: column;
+
+
+        align-items: center;
+
+
+        gap: 15px;
+
+
+        padding: 0;
+
+
+    }
+
+
+
+
+    .hero {
+
+
+        min-height: 70vh;
+
+
+        padding: 20px;
+
+
+    }
+
+
+
+
+    .hero h2 {
+
+
+        font-size: 30px;
+
+
+    }
+
+
+
+
+    .hero p {
+
+
+        font-size: 16px;
+
+
+    }
+
+
+
+
+    button {
+
+
+        padding: 12px 25px;
+
+
+    }
+
+
+}
+.sobre-mi {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-color: #111;
+
+}
+
+
+.sobre-mi h2 {
+
+    color: gold;
+
+    font-size: 35px;
+
+}
+
+
+.sobre-mi p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+.servicios {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+}
+
+
+.servicios h2 {
+
+    color: gold;
+
+    font-size: 35px;
+
+}
+
+
+
+.tarjetas {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 40px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.tarjeta {
+
+    background-color: #111;
+
+    width: 300px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.tarjeta:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+
+.tarjeta h3 {
+
+    color: gold;
+
+    font-size: 22px;
+
+}
+
+
+
+.tarjeta p {
+
+    line-height: 1.5;
+
+}
+
+.proyectos {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-color: #111;
+
+}
+
+
+.proyectos h2 {
+
+    color: gold;
+
+    font-size: 35px;
+
+}
+
+
+
+.proyecto {
+
+    max-width: 500px;
+
+    margin: 40px auto;
+
+    background-color: black;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+}
+
+
+
+.proyecto h3 {
+
+    color: gold;
+
+    font-size: 25px;
+
+}
+
+
+
+.proyecto p {
+
+    line-height: 1.6;
+
+}
+.contacto {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+}
+
+
+.contacto h2 {
+
+    color: gold;
+
+    font-size: 35px;
+
+}
+
+
+.contacto p {
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.contacto a {
+
+    background-color: gold;
+
+    color: black;
+
+    padding: 15px 30px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.contacto a:hover {
+
+    transform: scale(1.05);
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+footer {
+
+    background-color: #050505;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+}
+
+
+footer p {
+
+    margin: 10px;
+
+    color: white;
+
+}
+
+
+.redes {
+
+    margin-top: 20px;
+
+}
+
+
+.redes a {
+
+    color: gold;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+
+}
+
+
+.redes a:hover {
+
+    text-decoration: underline;
+
+}
